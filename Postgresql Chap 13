@@ -1,0 +1,48 @@
+-- select upper('hello')
+-- select initcap('at the end of the day')
+
+-- #returns 2019
+-- SELECT substring('The game starts at 7 p.m. on May 2, 2019.' from '\d{4}');
+
+-- #returns the number of characters in a string
+-- select char_length('Jordan')
+
+-- #removes the characters s in sock
+-- select trim('s' from 'sock')
+
+-- #removes the last s in the socks category
+-- select trim (trailing's'from 'socks')
+
+-- #removes the the s on the left hand side
+-- select ltrim('socks','s')
+
+-- #removes the the s on the right hand side
+-- select rtrim('socks','s')
+
+-- #return the first 4 srings from the left
+-- left(string,number)
+-- right(string,number)
+
+-- select left('703-355-1222',3)
+-- select right('703-355-1222',4)
+
+-- #replace characters
+-- select replace('bat','b','c')
+
+-- #Lets use the crime reports csv to practise the above
+
+-- create table crime_reports(
+-- crime_id bigserial primary key,
+-- date_1 timestamp with time zone,
+-- date_2 timestamp with time zone,
+-- street varchar(250),
+-- city varchar(100),
+-- crime_type varchar(100),
+-- description text,
+-- case_number varchar(50),
+-- original_text text not null
+-- )
+ 
+-- copy crime_reports(original_text)
+-- from 'D:\Data Science e-books\Postgresql journey\crime_reports.csv'
+-- with(format csv,header off,QUOTE '""');

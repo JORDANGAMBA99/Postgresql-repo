@@ -46,3 +46,5 @@
 -- copy crime_reports(original_text)
 -- from 'D:\Data Science e-books\Postgresql journey\crime_reports.csv'
 -- with(format csv,header off,QUOTE '""');
+
+-- SELECT original_text FROM crime_reports

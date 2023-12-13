@@ -1,2 +1,3 @@
-# Postgresql-repo
-Here is where I document my learning journey towards being a Postgresql master
+# Postgresql-repo from Chapter 13 in Practical SQL
+Here is where I document my learning journey toward being a Postgresql master
+

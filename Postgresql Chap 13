@@ -48,3 +48,7 @@
 -- with(format csv,header off,QUOTE '""');
 
 -- SELECT original_text FROM crime_reports
+-- select crime_id,
+--  regexp_match(original_text,'\d{1,2}\/\d{1,2}\/d{2}')
+-- from crime_reports;
+
